@@ -53,13 +53,13 @@ After counting all characters, the function sorts the dictionary by the ASCII va
 Run the main file:
 
 ```
-python count.py
+python count_occurrences.py
 ```
 
 Run the unit tests::
 
 ```
-python -m pytest -s test_count.py
+python -m pytest -s test_count_occurrences.py
 ```
 
 
