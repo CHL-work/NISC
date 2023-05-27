@@ -34,8 +34,6 @@ If any winners are found, the game ends immediately and the function returns a l
 
 The `test_bingo_simulation.py` file contains unit tests for the `play()` and `check_winner()` functions to ensure they work correctly.
 
-Sure, here's a simple README.md for your project:
-
 ---
 
 ## Count Occurrences

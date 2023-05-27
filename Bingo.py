@@ -34,6 +34,7 @@ def play(calledSquares, cardData):
     return winners
 
 def main():
+    #Vertical Match Example from Bingo.pdf
     calledSquares = [[1, 21], [1, 19], [1, 24], [1, 20], [1, 30]]
     cardData = [
         [
@@ -52,6 +53,25 @@ def main():
 
     print(play(calledSquares, cardData)) # Output: [0]
 
+    #Free Space Match Example from Bingo.pdf
+    calledSquares = [[0, 40], [1, 41], [3, 37], [4, 35]]
+    cardData = [
+        [
+            [6, 21, 36, 55, 61],
+            [12, 19, 43, 56, 69],
+            [9, 24, -1, 46, 71],
+            [3, 20, 44, 52, 67],
+            [1, 30, 34, 57, 65]
+        ],
+        [
+            [4, 16, 40, 46, 72],
+            [10, 17, 41, 58, 62],
+            [2, 26, -1, 48, 66],
+            [7, 18, 37, 60, 63],
+            [14, 30, 35, 59, 73]
+        ]
+    ]
+    print(play(calledSquares, cardData)) # Output should be [] instead of [1]
 
 if __name__ == "__main__":
     main()
