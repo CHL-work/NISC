@@ -20,13 +20,12 @@ def play(calledSquares, cardData):
     matched_cards = [[[row[col] == -1 for col in range(n)] for row in card] for card in cardData]
 
     for round in calledSquares:
-        _, value = round
+        column, value = round
         for i, card in enumerate(cardData):
             # update the matched card according to the called square
             for j in range(n):
-                for k in range(n):
-                    if card[j][k] == value:
-                        matched_cards[i][j][k] = True
+                if card[j][column] == value:
+                    matched_cards[i][j][column] = True
             # check if this card is a winner
             if check_winner(matched_cards[i]):
                 winners.append(i)
